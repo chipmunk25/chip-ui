@@ -1,5 +1,3 @@
-
-
 export const Button = () => {
-  return <div style={{ background: "red", color: "white" }}>Button</div>;
+  return <button className="bg-red-200">Button</button>;
 };
