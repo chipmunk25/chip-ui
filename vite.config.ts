@@ -6,14 +6,10 @@ import tsconfigPaths from "vite-tsconfig-paths";
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react(), tsconfigPaths()],
-  // resolve: {
-  //   alias: {
-  //     "chip-ui": path.resolve(__dirname, "./lib/main.tsx"),
-  //   },
-  // },
+
   build: {
     lib: {
-      entry: path.resolve(__dirname, "lib/main.ts"),
+      entry: path.resolve(__dirname, "lib/main.tsx"),
       name: "chip-ui",
       fileName: "chip-ui",
     },
