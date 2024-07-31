@@ -24,7 +24,7 @@
     "noFallthroughCasesInSwitch": true,
     "baseUrl": ".",
     "paths": {
-      "chip-ui": ["./lib/main.tsx"]
+      "adusei-ui": ["./lib/main.tsx"]
     }
   },
   "include": ["src", "lib"]

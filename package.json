@@ -1,17 +1,17 @@
 {
-  "name": "chip-ui",
+  "name": "adusei-ui",
   "version": "0.0.1",
   "license": "MIT",
   "files": [
     "dist"
   ],
   "type": "module",
-  "main": "./dist/chip-ui.umd.cjs",
-  "module": "./dist/chip-ui.js",
+  "main": "./dist/adusei-ui.umd.cjs",
+  "module": "./dist/adusei-ui.js",
   "exports": {
     ".": {
-      "import": "./dist/chip-ui.js",
-      "require": "./dist/chip-ui.umd.cjs"
+      "import": "./dist/adusei-ui.js",
+      "require": "./dist/adusei-ui.umd.cjs"
     }
   },
   "scripts": {

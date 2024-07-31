@@ -10,8 +10,8 @@ export default defineConfig({
   build: {
     lib: {
       entry: path.resolve(__dirname, "lib/main.tsx"),
-      name: "chip-ui",
-      fileName: "chip-ui",
+      name: "adusei-ui",
+      fileName: "adusei-ui",
     },
     rollupOptions: {
       external: ["react", "react-dom", "react/jsx-runtime"],

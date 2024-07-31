@@ -1,5 +1,5 @@
 // import { useState } from "react";
-import { Button } from "chip-ui";
+import { Button } from "adusei-ui";
 import "./App.css";
 
 function App() {
