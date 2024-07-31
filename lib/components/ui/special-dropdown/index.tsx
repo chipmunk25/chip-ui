@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Option } from "~/lib/constants";
+import { Option } from "lib/utils/constants";
 import { cn } from "lib/utils";
 
 import { Checkbox } from "../checkbox";
