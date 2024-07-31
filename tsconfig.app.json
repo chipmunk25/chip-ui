@@ -24,6 +24,7 @@
     "noFallthroughCasesInSwitch": true,
     "baseUrl": ".",
     "paths": {
+      "adusei-ui/*": ["./lib/*"],
       "adusei-ui": ["./lib/main.tsx"]
     }
   },

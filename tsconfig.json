@@ -7,5 +7,12 @@
     {
       "path": "./tsconfig.node.json"
     }
-  ]
+  ],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "adusei-ui/*": ["./lib/*"],
+      "adusei-ui": ["./lib/main.tsx"]
+    }
+  }
 }

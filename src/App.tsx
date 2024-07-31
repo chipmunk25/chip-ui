@@ -7,7 +7,7 @@ function App() {
 
   return (
     <>
-      <Button></Button>
+      <Button variant="secondary">Welcome</Button>
     </>
   );
 }
