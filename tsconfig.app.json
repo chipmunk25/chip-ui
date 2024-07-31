@@ -22,9 +22,10 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
+
     "baseUrl": ".",
     "paths": {
-      "adusei-ui/*": ["./lib/*"],
+      "lib/*": ["./lib/*"],
       "adusei-ui": ["./lib/main.tsx"]
     }
   },
