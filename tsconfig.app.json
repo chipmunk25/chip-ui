@@ -19,7 +19,8 @@
     "noEmit": true,
     "jsx": "react-jsx",
     "paths": {
-      "adusei-ui": ["./lib/main.ts"]
+      "adusei-ui": ["./lib/main.ts"],
+      "@/*": ["./lib/*"]
     },
     /* Linting */
     "strict": true,
