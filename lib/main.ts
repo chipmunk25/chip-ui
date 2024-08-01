@@ -1,2 +1,2 @@
 import "./tailwind.css";
-export * from "lib/components/ui";
+export { Button } from "./components/ui/button";

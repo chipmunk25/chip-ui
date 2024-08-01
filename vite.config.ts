@@ -1,22 +1,21 @@
-import path from "path";
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import tsconfigPaths from "vite-tsconfig-paths";
 import dts from "vite-plugin-dts";
+import { resolve } from "path";
+
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react(), tsconfigPaths(), dts()],
-  resolve: {
-    alias: {
-      "@": path.resolve(__dirname, "./lib"),
-    },
-  },
+  plugins: [react(), tsconfigPaths(), dts({ rollupTypes: true })],
   build: {
+    // library entry and output settings
     lib: {
-      entry: path.resolve(__dirname, "lib/main.ts"),
+      entry: resolve(__dirname, "lib/main.ts"),
       name: "adusei-ui",
       fileName: "adusei-ui",
     },
+    // bundler options
+    // externalize react-related imports
     rollupOptions: {
       external: ["react", "react-dom", "react/jsx-runtime"],
       output: {

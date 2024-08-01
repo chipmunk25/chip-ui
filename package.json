@@ -1,82 +1,37 @@
 {
-  "name": "adusei-ui",
-  "version": "0.0.5",
-  "license": "MIT",
+  "name": "chip-ui",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "files": [
     "dist"
   ],
-  "type": "module",
-  "types": "./dist/main.d.ts",
-  "main": "./dist/adusei-ui.umd.cjs",
-  "module": "./dist/adusei-ui.js",
+  "main": "./dist/aduse-ui.umd.cjs",
+  "module": "./dist/aduse-ui.js",
   "exports": {
     ".": {
-      "import": "./dist/adusei-ui.js",
-      "require": "./dist/adusei-ui.umd.cjs"
-    },
-    "./dist/style.css": "./dist/style.css"
+      "import": "./dist/aduse-ui.js",
+      "require": "./dist/aduse-ui.umd.cjs"
+    }
   },
-  "sideEffects": false,
   "scripts": {
     "dev": "vite",
-    "prebuild": "rm -rf ./dist",
     "build": "tsc -b && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview",
-    "prepublish": "pnpm build ",
-    "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "preview": "vite preview"
   },
   "dependencies": {
-    "@hookform/resolvers": "^3.9.0",
-    "@radix-ui/react-alert-dialog": "^1.1.1",
-    "@radix-ui/react-avatar": "^1.1.0",
-    "@radix-ui/react-checkbox": "^1.1.1",
-    "@radix-ui/react-dialog": "^1.1.1",
-    "@radix-ui/react-dropdown-menu": "^2.1.1",
-    "@radix-ui/react-label": "^2.1.0",
-    "@radix-ui/react-popover": "^1.1.1",
-    "@radix-ui/react-progress": "^1.1.0",
-    "@radix-ui/react-radio-group": "^1.2.0",
-    "@radix-ui/react-scroll-area": "^1.1.0",
-    "@radix-ui/react-select": "^2.1.1",
-    "@radix-ui/react-separator": "^1.1.0",
     "@radix-ui/react-slot": "^1.1.0",
-    "@radix-ui/react-switch": "^1.1.0",
-    "@radix-ui/react-tabs": "^1.1.0",
-    "@radix-ui/react-tooltip": "^1.1.2",
-    "@tanstack/react-table": "^8.19.3",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
-    "cmdk": "^1.0.0",
-    "date-fns": "^3.6.0",
-    "lucide-react": "^0.417.0",
-    "next-themes": "^0.3.0",
+    "lucide-react": "^0.419.0",
     "react": "^18.3.1",
-    "react-circular-progressbar": "^2.1.0",
-    "react-datepicker": "^7.3.0",
-    "react-day-picker": "8.10.1",
     "react-dom": "^18.3.1",
-    "react-hook-form": "^7.52.1",
-    "react-icons": "^5.2.1",
-    "react-select": "^5.8.0",
-    "sonner": "^1.5.0",
     "tailwind-merge": "^2.4.0",
-    "tailwindcss-animate": "^1.0.7",
-    "vite-tsconfig-paths": "^4.3.2",
-    "zod": "^3.23.8"
+    "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
-    "@chromatic-com/storybook": "^1.6.1",
-    "@storybook/addon-essentials": "^8.2.6",
-    "@storybook/addon-interactions": "^8.2.6",
-    "@storybook/addon-links": "^8.2.6",
-    "@storybook/addon-onboarding": "^8.2.6",
-    "@storybook/blocks": "^8.2.6",
-    "@storybook/react": "^8.2.6",
-    "@storybook/react-vite": "^8.2.6",
-    "@storybook/test": "^8.2.6",
-    "@types/node": "^22.0.0",
+    "@types/node": "^22.0.2",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "@typescript-eslint/eslint-plugin": "^7.15.0",
@@ -86,12 +41,12 @@
     "eslint": "^8.57.0",
     "eslint-plugin-react-hooks": "^4.6.2",
     "eslint-plugin-react-refresh": "^0.4.7",
-    "eslint-plugin-storybook": "^0.8.0",
     "postcss": "^8.4.40",
-    "storybook": "^8.2.6",
     "tailwindcss": "^3.4.7",
     "typescript": "^5.4.2",
     "vite": "^5.3.4",
-    "vite-plugin-dts": "3.9.1"
+    "vite-plugin-dts": "3.9.1",
+    "vite-tsconfig-paths": "^4.3.2",
+    "vitest": "^2.0.5"
   }
 }

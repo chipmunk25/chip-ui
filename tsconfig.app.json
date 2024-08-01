@@ -8,6 +8,8 @@
     "module": "ESNext",
     "skipLibCheck": true,
 
+    "types": ["vitest/globals"],
+
     /* Bundler mode */
     "moduleResolution": "bundler",
     "allowImportingTsExtensions": true,
@@ -16,18 +18,14 @@
     "moduleDetection": "force",
     "noEmit": true,
     "jsx": "react-jsx",
-
+    "paths": {
+      "adusei-ui": ["./lib/main.ts"]
+    },
     /* Linting */
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true,
-    "baseUrl": ".",
-    "paths": {
-      "lib/*": ["./lib/*"],
-      "adusei-ui": ["./lib/main.ts"],
-      "@/*": ["./lib/*"]
-    }
+    "noFallthroughCasesInSwitch": true
   },
-  "include": ["src", "lib", "src/**/*", "lib/**/*"]
+  "include": ["src", "lib"]
 }

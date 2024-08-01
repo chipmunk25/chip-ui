@@ -9,18 +9,9 @@
     }
   ],
   "compilerOptions": {
-    // "declaration": true,
-    // "typeRoots": ["./dist/main.d.ts"],
-    // "baseUrl": "./",
     "baseUrl": ".",
     "paths": {
-      "lib/*": ["./lib/*"],
-      "adusei-ui": ["./lib/main.ts"],
-      "@/*": ["./lib/*"]
+      "adusei-ui": ["./lib/main.ts"]
     }
-    // "paths": {
-    //   "lib/*": ["./lib/*"],
-    //   "adusei-ui": ["./lib/main.ts"]
-    // }
   }
 }
